@@ -188,11 +188,19 @@ footer {
   padding-top: 12px;
 }
 .sydney {
-  text-decoration: none;
+  text-decoration: underline;
   color: #5c715e;
   cursor: pointer;
 }
 .sydney:hover {
   color: rgb(173, 143, 173);
   text-decoration: underline;
+}
+.sourceCode {
+  color: rgb(173, 143, 173);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sourceCode:hover {
+  color: #5c715e;
 }
