@@ -131,9 +131,13 @@ h3 {
   padding: 9px;
 }
 .ahead {
-  padding: 30px;
+  padding: 12px;
   display: block;
   margin: 0 auto;
+  max-width: 80%;
+  border: #475748 solid 2px;
+  border-radius: 34px;
+  background-color: #76917938;
 }
 .card {
   background-color: #ddeedf;
@@ -154,7 +158,8 @@ p {
   font-weight: 600;
 }
 h5 {
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 700;
 }
 .week {
   color: #5c715e;
@@ -167,13 +172,14 @@ h5 {
 .music {
   background-color: #5c715e;
   color: #f2f9f1;
-  padding: 12px 20px;
+  padding: 11px 20px;
   text-decoration: none;
   border: 2px solid #5c715e;
   border-radius: 30px;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 12px;
   transition: 200ms ease-in-out;
 }
 .music:hover {
