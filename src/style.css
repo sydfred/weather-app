@@ -1,0 +1,198 @@
+body {
+  background-color: #f2f9f1;
+  font-family: "Azeret Mono", monospace;
+}
+
+.select {
+  padding: 30px 15px 0px;
+  position: relative;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 140px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5c715e;
+  border-radius: 30px;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #5c715e;
+  border: none;
+  color: #f2f9f1;
+  padding: 12px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border: 2px solid #5c715e;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  position: absolute;
+  right: 13px;
+  bottom: 4px;
+}
+.city {
+  background-color: #b6cdbd;
+  color: #5c715e;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  color: #5c715e;
+  background-color: #f2f9f1;
+}
+#current-location {
+  background-color: #5c715e;
+  border: none;
+  color: #f2f9f1;
+  padding: 12px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border: 2px solid #5c715e;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  position: absolute;
+  left: 32px;
+  top: 38px;
+}
+#current-location:hover {
+  color: #5c715e;
+  background-color: #f2f9f1;
+}
+h1,
+h2 {
+  text-align: center;
+  color: #475748;
+  font-weight: 700;
+}
+h1 {
+  padding-top: 15px;
+  font-size: 35px;
+  line-height: 30px;
+}
+h2 {
+  font-size: 25px;
+  padding: 0;
+  color: #5c715e;
+}
+h3 {
+  text-align: center;
+  font-weight: 400;
+  color: #475748;
+  padding-top: 15px;
+  font-size: 28px;
+}
+.sun-head {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 100px;
+  color: #90a195;
+}
+.current-temp,
+.temp,
+.weekly,
+.information {
+  text-align: center;
+  color: #5c715e;
+}
+.current-temp,
+.weekly {
+  font-size: 20px;
+}
+.temp {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#celcius-link,
+#farenheit-link {
+  position: relative;
+  color: #475748;
+  font-size: 18px;
+  float: none;
+
+  text-decoration: none;
+}
+
+.highs {
+  text-align: center;
+  margin: auto;
+  padding-top: 12px;
+  color: #475748;
+  font-size: 21px;
+}
+.weekly {
+  font-weight: 500;
+  padding: 9px;
+}
+.ahead {
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.card {
+  background-color: #ddeedf;
+  padding: 15px;
+  display: block;
+
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+h5,
+p {
+  text-align: center;
+  color: #475748;
+}
+p {
+  font-size: 15px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 20px;
+}
+.week {
+  color: #5c715e;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.music {
+  background-color: #5c715e;
+  color: #f2f9f1;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 2px solid #5c715e;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: 200ms ease-in-out;
+}
+.music:hover {
+  color: #5c715e;
+  background-color: #f2f9f1;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #90a195;
+  padding-top: 12px;
+}
+.sydney {
+  text-decoration: none;
+  color: #5c715e;
+  cursor: pointer;
+}
+.sydney:hover {
+  color: rgb(173, 143, 173);
+  text-decoration: underline;
+}
