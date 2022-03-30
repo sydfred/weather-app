@@ -109,16 +109,6 @@ h3 {
   font-weight: 600;
 }
 
-#celcius-link,
-#farenheit-link {
-  position: relative;
-  color: #475748;
-  font-size: 18px;
-  float: none;
-
-  text-decoration: none;
-}
-
 .highs {
   text-align: center;
   margin: auto;
@@ -134,10 +124,10 @@ h3 {
   padding: 12px;
   display: block;
   margin: 0 auto;
-  max-width: 80%;
-  border: #475748 solid 2px;
+
+  border: #475748 solid 1.5px;
   border-radius: 34px;
-  background-color: #76917938;
+  background-color: #b5cdbd;
 }
 .card {
   background-color: #ddeedf;
