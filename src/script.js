@@ -118,6 +118,12 @@ function titleCase(input) {
   return input.join(" ");
 }
 
+function getForecast(coordinates) {
+  let apiKey = "cedf9c77bb47c88f8069170815609200";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function updateWeather(response) {
   document.querySelector("#city").innerHTML = titleCase(response.data.name);
   document.querySelector(".sky").innerHTML = titleCase(
@@ -152,6 +158,8 @@ function updateWeather(response) {
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
   displayForecast();
+
+  getForecast(response.data.coord);
 }
 
 function submitCity(event) {
@@ -166,15 +174,17 @@ function submitCity(event) {
   }
 }
 //forecast
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response);
   let forecastElement = document.querySelector(".ahead");
   let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<div class="col-2" align = "center">
-      
+      `
+      <div class="col-2" align = "center">
+
             <div class="card">
               <div class="card-body">
                 <h5 id = date-1 class="card-title">${day}</h5>
@@ -185,7 +195,8 @@ function displayForecast() {
               </div>
             </div>
            
-          </div>`;
+          </div>
+          `;
   });
 
   forecastHTML = forecastHTML + `</div>`;
