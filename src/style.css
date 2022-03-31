@@ -101,10 +101,19 @@ img #icon {
   font-size: 20px;
 }
 .temp {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
 }
-
+#units {
+  position: relative;
+  top: -10px;
+  color: #5c715e;
+  font-size: 20px;
+  font-weight: 600;
+}
+a {
+  color: #5c715e;
+}
 .highs {
   text-align: center;
   margin: auto;

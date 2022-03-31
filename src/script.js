@@ -123,9 +123,8 @@ function updateWeather(response) {
   document.querySelector(".sky").innerHTML = titleCase(
     response.data.weather[0].description
   );
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  fahrenheitTemp = response.data.main.temp;
+  document.querySelector("#temp").innerHTML = Math.round(fahrenheitTemp);
   document.querySelector(".feels").innerHTML = Math.round(
     response.data.main.feels_like
   );
@@ -165,6 +164,31 @@ function submitCity(event) {
     cityInput.value = "";
   }
 }
+
+//unit conversion
+function showCelcius(event) {
+  event.preventDefault();
+  let celciusTemperature = (fahrenheitTemp * 5) / 9 - 32;
+
+  document.querySelector("#temp").innerHTML = Math.round(celciusTemperature);
+}
+function showFar(event) {
+  event.preventDefault();
+  document.querySelector("#temp").innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celciusLink = document.querySelector("#celcius-link");
+if (celciusLink) {
+  celciusLink.addEventListener("click", showCelcius);
+}
+let farLink = document.querySelector("#fahrenheit-link");
+if (farLink) {
+  farLink.addEventListener("click", showFar);
+}
+
+let fahrenheitTemp = null;
+
+//search functions
 
 let searchCity = document.querySelector("#search-city");
 searchCity.addEventListener("submit", submitCity);
