@@ -168,12 +168,16 @@ function submitCity(event) {
 //unit conversion
 function showCelcius(event) {
   event.preventDefault();
+  celciusLink.classList.add("active");
+  farLink.classList.remove("active");
   let celciusTemperature = (fahrenheitTemp * 5) / 9 - 32;
 
   document.querySelector("#temp").innerHTML = Math.round(celciusTemperature);
 }
 function showFar(event) {
   event.preventDefault();
+  celciusLink.classList.remove("active");
+  farLink.classList.add("active");
   document.querySelector("#temp").innerHTML = Math.round(fahrenheitTemp);
 }
 

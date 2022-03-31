@@ -111,6 +111,14 @@ img #icon {
   font-size: 20px;
   font-weight: 600;
 }
+.active {
+  color: #575e58;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
 a {
   color: #5c715e;
 }
