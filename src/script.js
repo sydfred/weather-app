@@ -202,6 +202,13 @@ if (button) {
   button.addEventListener("click", logLocation);
 }
 updateCurrentDetails();
-
 let units = "imperial";
 let key = "cedf9c77bb47c88f8069170815609200";
+
+function search(city) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=${units}`;
+  if (city.value !== "") {
+    axios.get(apiUrl).then(updateWeather);
+  }
+}
+search("Atlanta");
