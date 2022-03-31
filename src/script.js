@@ -183,7 +183,7 @@ function displayForecast(response) {
     forecastHTML =
       forecastHTML +
       `
-      <div class="col-2" align = "center">
+      <div class="col-2" >
 
             <div class="card">
               <div class="card-body">
@@ -196,6 +196,7 @@ function displayForecast(response) {
             </div>
            
           </div>
+         
           `;
   });
 

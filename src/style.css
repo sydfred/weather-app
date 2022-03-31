@@ -130,8 +130,11 @@ a {
   font-size: 21px;
 }
 .weekly {
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
   padding: 9px;
+  text-align: center;
 }
 .ahead {
   padding: 12px;
@@ -144,11 +147,16 @@ a {
 }
 .card {
   background-color: #ddeedf;
-  padding: 15px;
+  padding: 11px;
   display: block;
   margin: 0 auto;
   float: none;
   margin-bottom: 10px;
+  text-align: center;
+}
+.col-2 {
+  margin: 0 auto;
+  float: none;
 }
 h5 {
   text-align: center;
@@ -167,11 +175,13 @@ h5 {
 .center {
   text-align: center;
   width: 47px;
+  display: block;
+  margin: 0 auto;
 }
 .week {
   color: #5c715e;
   font-size: 20px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   display: block;
   margin: 0 auto;
