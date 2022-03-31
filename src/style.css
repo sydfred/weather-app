@@ -45,13 +45,13 @@ input[type="reset"]:hover {
   background-color: #f2f9f1;
 }
 #current-location {
-  background-color: #5c715e;
+  background-color: #ec6e4c;
   border: none;
   color: #f2f9f1;
   padding: 12px 5px;
   text-decoration: none;
   margin: 4px 2px;
-  border: 2px solid #5c715e;
+  border: 2px solid #ec6e4c;
   border-radius: 30px;
   cursor: pointer;
   transition: 200ms ease-in-out;
@@ -60,7 +60,7 @@ input[type="reset"]:hover {
   top: 38px;
 }
 #current-location:hover {
-  color: #5c715e;
+  color: #ec6e4c;
   background-color: #f2f9f1;
 }
 h1,
@@ -150,14 +150,15 @@ a {
   float: none;
   margin-bottom: 10px;
 }
-h5,
-p {
+h5 {
   text-align: center;
-  color: #475748;
+  color: #9d4a33;
 }
 p {
+  text-align: center;
   font-size: 14px;
   font-weight: 300;
+  color: #5c715e;
 }
 h5 {
   font-size: 15px;
@@ -205,11 +206,11 @@ footer {
   cursor: pointer;
 }
 .sydney:hover {
-  color: rgb(173, 143, 173);
+  color: #ec6e4c;
   text-decoration: underline;
 }
 .sourceCode {
-  color: rgb(173, 143, 173);
+  color: #ec6e4c;
   text-decoration: underline;
   cursor: pointer;
 }

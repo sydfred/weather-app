@@ -173,7 +173,8 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<div class="col-2">
+      `<div class="col-2" align = "center">
+      
             <div class="card">
               <div class="card-body">
                 <h5 id = date-1 class="card-title">${day}</h5>
@@ -183,6 +184,7 @@ function displayForecast() {
                 <p class="card-text"><span class="weather-forecast-max"> 59°</span> | <span class="weather-forecast-min"> 43°</span> </p>
               </div>
             </div>
+           
           </div>`;
   });
 
