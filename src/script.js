@@ -136,6 +136,13 @@ function updateWeather(response) {
   document.querySelector(".wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+  document.querySelector("#high").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
+  document.querySelector("#low").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
 }
 
 function submitCity(event) {
@@ -161,3 +168,5 @@ updateCurrentDetails();
 
 let units = "imperial";
 let key = "cedf9c77bb47c88f8069170815609200";
+
+// weather icons
