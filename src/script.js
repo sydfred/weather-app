@@ -149,6 +149,9 @@ function updateWeather(response) {
       "src",
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 
 function submitCity(event) {
@@ -174,5 +177,3 @@ updateCurrentDetails();
 
 let units = "imperial";
 let key = "cedf9c77bb47c88f8069170815609200";
-
-// weather icons
