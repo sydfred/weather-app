@@ -86,12 +86,8 @@ h3 {
   padding-top: 15px;
   font-size: 28px;
 }
-.sun-head {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  font-size: 100px;
-  color: #90a195;
+img #icon {
+  size: 220px;
 }
 .current-temp,
 .temp,

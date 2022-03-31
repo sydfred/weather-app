@@ -123,7 +123,7 @@ function updateWeather(response) {
   document.querySelector(".sky").innerHTML = titleCase(
     response.data.weather[0].description
   );
-  document.querySelector(".temp").innerHTML = Math.round(
+  document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector(".feels").innerHTML = Math.round(
@@ -143,6 +143,12 @@ function updateWeather(response) {
   document.querySelector("#low").innerHTML = Math.round(
     response.data.main.temp_min
   );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function submitCity(event) {
