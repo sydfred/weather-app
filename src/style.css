@@ -137,16 +137,15 @@ a {
   padding: 12px;
   display: block;
   margin: 0 auto;
-
   border: #475748 solid 1.5px;
   border-radius: 34px;
   background-color: #b5cdbd;
+  text-align: center;
 }
 .card {
   background-color: #ddeedf;
   padding: 15px;
   display: block;
-
   margin: 0 auto;
   float: none;
   margin-bottom: 10px;
@@ -157,12 +156,16 @@ p {
   color: #475748;
 }
 p {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 300;
 }
 h5 {
   font-size: 15px;
   font-weight: 700;
+}
+.center {
+  text-align: center;
+  width: 47px;
 }
 .week {
   color: #5c715e;

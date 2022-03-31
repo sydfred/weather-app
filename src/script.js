@@ -151,6 +151,7 @@ function updateWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+  displayForecast();
 }
 
 function submitCity(event) {
@@ -163,6 +164,30 @@ function submitCity(event) {
     axios.get(apiUrl).then(updateWeather);
     cityInput.value = "";
   }
+}
+//forecast
+function displayForecast() {
+  let forecastElement = document.querySelector(".ahead");
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 id = date-1 class="card-title">${day}</h5>
+                <center>
+                  <img id = "day-1" src="https://openweathermap.org/img/wn/01d@2x.png" alt="" class="center">
+                </center>
+                <p class="card-text"><span class="weather-forecast-max"> 59°</span> | <span class="weather-forecast-min"> 43°</span> </p>
+              </div>
+            </div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 //unit conversion
