@@ -175,7 +175,8 @@ function submitCity(event) {
 }
 //forecast
 function displayForecast(response) {
-  console.log(response);
+  console.log(response.data.daily);
+  let forecast = response;
   let forecastElement = document.querySelector(".ahead");
   let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
   let forecastHTML = `<div class="row">`;
