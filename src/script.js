@@ -209,7 +209,7 @@ function showCelcius(event) {
   event.preventDefault();
   celciusLink.classList.add("active");
   farLink.classList.remove("active");
-  let celciusTemperature = (fahrenheitTemp * 5) / 9 - 32;
+  let celciusTemperature = ((fahrenheitTemp - 32) * 5) / 9;
 
   document.querySelector("#temp").innerHTML = Math.round(celciusTemperature);
 }
