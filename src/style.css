@@ -1,8 +1,10 @@
 body {
-  background-color: #f2f9f1;
-  font-family: "Azeret Mono", monospace;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+hr {
+  color: #ec6e4c;
+}
 .select {
   padding: 30px 15px 0px;
   position: relative;
@@ -13,19 +15,19 @@ input[type="text"] {
   padding-right: 140px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #5c715e;
+  border: 2px solid #ec6e4c;
   border-radius: 30px;
 }
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #5c715e;
+  background-color: #ec6e4c;
   border: none;
-  color: #f2f9f1;
+  color: #000000;
   padding: 12px 5px;
   text-decoration: none;
   margin: 4px 2px;
-  border: 2px solid #5c715e;
+  border: 2px solid #ec6e4c;
   border-radius: 30px;
   cursor: pointer;
   transition: 200ms ease-in-out;
@@ -34,20 +36,20 @@ input[type="reset"] {
   bottom: 4px;
 }
 .city {
-  background-color: #b6cdbd;
-  color: #5c715e;
+  background-color: #000000;
+  color: #ec6e4c;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  color: #5c715e;
-  background-color: #f2f9f1;
+  color: #ec6e4c;
+  background-color: #000000;
 }
 #current-location {
   background-color: #ec6e4c;
   border: none;
-  color: #f2f9f1;
+  color: #000000;
   padding: 12px 5px;
   text-decoration: none;
   margin: 4px 2px;
@@ -61,30 +63,50 @@ input[type="reset"]:hover {
 }
 #current-location:hover {
   color: #ec6e4c;
-  background-color: #f2f9f1;
+  background-color: #000000;
 }
 h1,
 h2 {
   text-align: center;
-  color: #475748;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 300;
+}
+h1,
+h2 {
+  animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff3700,
+      0 0 80px #ff3700, 0 0 90px #ff3700, 0 0 100px #ff3700, 0 0 150px #ff3700;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 h1 {
   padding-top: 15px;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 30px;
 }
 h2 {
-  font-size: 25px;
-  padding: 0;
-  color: #5c715e;
+  font-size: 30px;
 }
 h3 {
   text-align: center;
   font-weight: 400;
-  color: #475748;
+  color: #ec6e4c;
   padding-top: 15px;
-  font-size: 28px;
+  font-size: 35px;
+  letter-spacing: 4px;
 }
 img #icon {
   size: 220px;
@@ -94,7 +116,7 @@ img #icon {
 .weekly,
 .information {
   text-align: center;
-  color: #5c715e;
+  color: #ec6e4c;
 }
 .current-temp,
 .weekly {
@@ -107,12 +129,12 @@ img #icon {
 #units {
   position: relative;
   top: -10px;
-  color: #5c715e;
+  color: #ec6e4c;
   font-size: 20px;
   font-weight: 600;
 }
 .active {
-  color: #575e58;
+  color: #ec6e4c;
   cursor: default;
   text-decoration: none;
 }
@@ -120,38 +142,58 @@ img #icon {
   text-decoration: none;
 }
 a {
-  color: #5c715e;
+  color: #ec6e4c;
 }
 .highs {
   text-align: center;
   margin: auto;
   padding-top: 12px;
-  color: #475748;
+  color: #ec6e4c;
   font-size: 21px;
 }
 .weekly {
+  animation: flicker 2.5s infinite alternate;
   display: block;
   margin: 0 auto;
   font-weight: 500;
   padding: 9px;
   text-align: center;
+  color: #fff;
 }
 .ahead {
   padding: 12px;
   display: block;
   margin: 0 auto;
-  border: #475748 solid 1.5px;
+  border: #ec6e4c solid 1.5px;
   border-radius: 34px;
-  background-color: #b5cdbd;
+  background-color: #e95c2d;
   text-align: center;
 }
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff3700,
+      0 0 80px #ff3700, 0 0 90px #ff3700, 0 0 100px #ff3700, 0 0 150px #ff3700;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
 .card {
-  background-color: #ddeedf;
+  background-color: #000000;
   padding: 11px;
   display: block;
-  border-radius: 25px;
   margin: 0 auto;
   float: none;
+  border-radius: 25px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -161,13 +203,13 @@ a {
 }
 h5 {
   text-align: center;
-  color: #9d4a33;
+  color: #ec6e4c;
 }
 p {
   text-align: center;
   font-size: 14px;
   font-weight: 300;
-  color: #5c715e;
+  color: #ec6e4c;
 }
 h5 {
   font-size: 15px;
@@ -180,7 +222,7 @@ h5 {
   margin: 0 auto;
 }
 .week {
-  color: #5c715e;
+  color: #ec6e4c;
   font-size: 20px;
   padding: 15px;
   text-align: center;
@@ -188,36 +230,54 @@ h5 {
   margin: 0 auto;
 }
 .music {
-  background-color: #5c715e;
-  color: #f2f9f1;
+  background-color: #ec6e4c;
+  color: #fff;
   padding: 11px 20px;
   text-decoration: none;
-  border: 2px solid #5c715e;
+  border: 2px solid #ec6e4c;
   border-radius: 30px;
   cursor: pointer;
   display: block;
   margin: auto;
   margin-top: 12px;
   transition: 200ms ease-in-out;
+  animation: flicker 5s infinite alternate;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff3700,
+      0 0 80px #ff3700, 0 0 90px #ff3700, 0 0 100px #ff3700, 0 0 150px #ff3700;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 .music:hover {
-  color: #5c715e;
-  background-color: #f2f9f1;
+  color: #fff;
+  background-color: #000000;
 }
 footer {
   text-align: center;
   font-size: 12px;
   text-decoration: none;
-  color: #90a195;
+  color: #ec6e4c;
   padding-top: 12px;
 }
 .sydney {
   text-decoration: underline;
-  color: #5c715e;
+  color: #ec6e4c;
   cursor: pointer;
 }
 .sydney:hover {
-  color: #ec6e4c;
+  color: #fff;
   text-decoration: underline;
 }
 .sourceCode {
@@ -226,5 +286,5 @@ footer {
   cursor: pointer;
 }
 .sourceCode:hover {
-  color: #5c715e;
+  color: #fff;
 }
