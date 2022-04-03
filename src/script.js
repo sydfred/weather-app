@@ -260,9 +260,9 @@ let fahrenheitTemp = null;
 let searchCity = document.querySelector("#search-city");
 searchCity.addEventListener("submit", submitCity);
 
-let button = document.querySelector("current-location");
-if (button) {
-  button.addEventListener("click", logLocation);
+let currentLocation = document.querySelector("#current-location");
+if (currentLocation) {
+  currentLocation.addEventListener("click", logLocation);
 }
 updateCurrentDetails();
 let units = "imperial";
